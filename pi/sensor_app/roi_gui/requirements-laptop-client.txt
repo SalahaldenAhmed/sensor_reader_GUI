@@ -1,0 +1,10 @@
+# For laptop_roi_client.py ONLY -- runs on the LAPTOP, has no camera and no
+# OCR engine of its own (OCR happens on the Pi over HTTP), so this is
+# deliberately light: no onnxruntime, no core/ dependency at all. This can
+# live in its own venv, completely separate from sensor_app's venv/assets.
+opencv-python>=4.5,<5
+numpy
+pillow>=9.0
+# tkinter is part of the Python standard library but is not always installed
+# by default on Debian/Ubuntu -- if `python3 -c "import tkinter"` fails:
+#   sudo apt install python3-tk

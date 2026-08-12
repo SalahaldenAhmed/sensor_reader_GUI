@@ -1,0 +1,25 @@
+{
+  "nodes": [
+    {
+      "node_id": "fridge_cam",
+      "reference_image": "assets/test_set/fridge_thermometers/fridge_thermometer.jpg",
+      "driver_spec": {
+        "type": "local",
+        "device_index": 0
+      },
+      "boxes": [
+        {
+          "label": "FRIDGE_TEMP",
+          "x": 200,
+          "y": 150,
+          "w": 240,
+          "h": 120,
+          "type": "temp",
+          "unit": "C",
+          "decimals": 1,
+          "int_digits": 2
+        }
+      ]
+    }
+  ]
+}

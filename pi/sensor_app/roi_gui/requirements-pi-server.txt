@@ -1,0 +1,4 @@
+# For pi_roi_server.py ONLY -- runs on the Pi, owns the camera + OCR engine,
+# has no GUI (headless HTTP server), so no pillow/tkinter needed.
+# Install into the SAME venv as sensor_app (../venv).
+-r ../requirements.txt

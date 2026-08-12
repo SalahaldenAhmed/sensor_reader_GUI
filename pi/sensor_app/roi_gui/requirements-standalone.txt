@@ -1,0 +1,9 @@
+# For standalone_roi_gui.py ONLY -- everything runs in one process on one
+# machine (camera + OCR engine together), so it needs the full OCR stack.
+# Install into the SAME venv as sensor_app (../venv) so it can see core/ and
+# assets/ -- do not create a separate venv for this.
+-r ../requirements.txt
+pillow>=9.0
+# tkinter is part of the Python standard library but is not always installed
+# by default on Debian/Ubuntu -- if `python3 -c "import tkinter"` fails:
+#   sudo apt install python3-tk

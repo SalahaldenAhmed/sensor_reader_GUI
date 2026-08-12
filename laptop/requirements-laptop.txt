@@ -1,0 +1,9 @@
+# sensor_gui.py talks to pi_server.py over plain HTTP (urllib, stdlib) --
+# these are just for decoding/rendering frames.
+opencv-python>=4.5,<5
+numpy>=1.26,<2
+pillow>=10
+
+# tkinter is part of the Python standard library but is packaged separately
+# on Debian/Ubuntu. If `python3 -c "import tkinter"` fails, install it with:
+#   sudo apt install python3-tk

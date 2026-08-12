@@ -1,0 +1,7 @@
+# Dev/test environment resolved cv2 4.5.4 from the system apt package
+# (python3-opencv) rather than pip's opencv-python; either works.
+opencv-python>=4.5,<5
+numpy==1.26.4
+onnxruntime==1.23.2
+requests==2.33.1
+pytest==6.2.5

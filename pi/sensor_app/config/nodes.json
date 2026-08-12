@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {
+      "node_id": "htc2_cam",
+      "driver_spec": {"type": "folder", "frames_dir": "assets/test_set/frames"},
+      "reference_image": "assets/test_set/frames/frame_001.jpg",
+      "boxes": [
+        {
+          "label": "IN_TEMP", "x": 760, "y": 360, "w": 180, "h": 90,
+          "type": "temp", "unit": "C", "decimals": 1, "int_digits": 2,
+          "range_min": -10.0, "range_max": 50.0, "ref_value": 25.3, "last_good": 25.3
+        },
+        {
+          "label": "OUT_TEMP", "x": 980, "y": 360, "w": 180, "h": 90,
+          "type": "temp", "unit": "C", "decimals": 1, "int_digits": 2,
+          "range_min": -10.0, "range_max": 50.0, "ref_value": 24.7, "last_good": 24.7
+        },
+        {
+          "label": "Humidity", "x": 760, "y": 470, "w": 150, "h": 90,
+          "type": "humidity", "unit": "%RH", "decimals": 0, "int_digits": 2,
+          "range_min": 0.0, "range_max": 100.0, "ref_value": 48.0, "last_good": 48.0
+        },
+        {
+          "label": "Time", "x": 980, "y": 470, "w": 150, "h": 90,
+          "type": "clock", "unit": null, "decimals": 0, "int_digits": 0,
+          "range_min": null, "range_max": null, "ref_value": null, "last_good": null
+        }
+      ]
+    },
+    {
+      "node_id": "fridge_cam",
+      "driver_spec": {"type": "folder", "frames_dir": "assets/test_set/fridge_thermometers"},
+      "reference_image": "assets/test_set/fridge_thermometers/fridge_thermometer_001.jpg",
+      "boxes": [
+        {
+          "label": "FRIDGE_TEMP", "x": 500, "y": 600, "w": 500, "h": 250,
+          "type": "temp", "unit": "C", "decimals": 1, "int_digits": 2,
+          "range_min": -40.0, "range_max": 40.0, "ref_value": -18.0, "last_good": -18.0
+        }
+      ]
+    }
+  ]
+}
